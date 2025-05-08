@@ -21,7 +21,7 @@
   </div>
 
   <script>
-    const endDate = new Date("June 7, 2025 13:45:00").getTime();
+    const endDate = new Date("June 6, 2025 13:45:00").getTime();
     const today = new Date();
     const startTime = new Date();
     const endTime = new Date();
@@ -87,7 +87,7 @@
         const lessonNumber = Math.floor(minutesSinceStart / 45);
         const lessonProgress = minutesSinceStart % 45;
         if (lessonNumber < 6) {
-          const remainingMin = 45 - lessonProgress;
+          const remainingMin = 55 - lessonProgress;
           const subject = subjectsPerDay[currentDay - 1][lessonNumber];
           document.getElementById("currentHour").innerHTML = `🕒 Ora in corso: ${subject} (${remainingMin} min alla fine dell'ora)`;
         } else {
