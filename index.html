@@ -84,8 +84,8 @@
         const schoolStart = new Date(today);
         schoolStart.setHours(8, 0, 0);
         const minutesSinceStart = Math.floor((now - schoolStart.getTime()) / (1000 * 60));
-        const lessonNumber = Math.floor(minutesSinceStart / 45);
-        const lessonProgress = minutesSinceStart % 45;
+        const lessonNumber = Math.floor(minutesSinceStart / 55);
+        const lessonProgress = minutesSinceStart % 55;
         if (lessonNumber < 6) {
           const remainingMin = 55 - lessonProgress;
           const subject = subjectsPerDay[currentDay - 1][lessonNumber];
